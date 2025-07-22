@@ -20,7 +20,7 @@ function App() {
                   Your browser does not support the WebM format.
               </video>
           </div>
-          <div id = "header" className='flex relative w-full h-fit bg-[url(./assets/splatter.png)] bg-contain justify-center align-middle items-center flex-col 2xl:flex-row items-center gap-20'>
+          <div id = "header" className='flex relative w-full h-fit bg-[url(./assets/splatter.png)] bg-contain justify-center align-middle flex-col 2xl:flex-row items-center gap-20'>
             <div className='flex flex-col align-middle justify-center w-1/2 2xl:w-1/4 h-full text-center text-5xl'>
               <img src = "./logo.png" className=' drop-shadow-white drop-shadow-2xl/50 -mb-20 z-0'></img>
               <h1 className='w-full z-10 font-bold'>SHOWCASE</h1>
