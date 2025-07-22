@@ -8,6 +8,19 @@
   color:white;
   overflow-x:hidden;
 }
+#scale{
+  width: 100vw;
+  height: 100vh;
+  transform: scale(0.8);
+  transform-origin: top left;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Compensate for scale to make it fill screen */
+  width: calc(100vw / 0.8);
+  height: calc(100vh / 0.8);
+}
 @theme{
   --color-irl-blue: #00aeef;
   --color-irl-red: #da1c5c;
@@ -39,7 +52,7 @@ h1{
   font-family:InputBold;
 }
 p{
-  font-size:2rem
+  font-size:1.25rem
 }
 b{
   font-family: InputBold;
