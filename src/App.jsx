@@ -21,15 +21,15 @@ function App() {
                   Your browser does not support the WebM format.
               </video>
           </div>
-          <div id = "header" className='flex relative w-full h-fit bg-[url(./assets/splatter.png)] bg-contain justify-center align-middle flex-col lg:flex-row items-center gap-20'>
-            <div className='flex flex-col align-middle justify-center w-1/2 lg:w-1/4 h-full text-center text-4xl'>
-              <img src = "./logo.png" className=' drop-shadow-white drop-shadow-2xl/50 -mb-20 z-0'></img>
-              <h1 className='w-full z-10 font-bold'>SHOWCASE</h1>
+          <div id = "header" className='flex relative w-screen h-fit bg-[url(./assets/splatter.png)] bg-contain justify-center align-middle flex-col lg:flex-row items-center gap-20'>
+            <div className='flex flex-col align-middle justify-center h-full text-center text-4xl'>
+              <img src = "./logo.png" className='w-md drop-shadow-white drop-shadow-2xl/50 -mb-20 z-0'></img>
+              <h1 className='z-10 font-bold'>SHOWCASE</h1>
             </div>
             <div className = "flex w-1/2 h-full text-center align-middle items-center justify-center">
               <div className='flex flex-col gap-5 mt-20 items-center'>
                 <h1 style = {{'--c':'#bd184f', '--w': '20px'}} className='irlgrid text-3xl bg-irl-red p-10 border-4 border-white rounded-full w-fit h-fit'>Welcome to the IRL Immersive Showcase</h1>
-                <div style = {{'--c':'#bd184f', '--w': '30px'}} className='irlgrid flex flex-col irlgrid bg-irl-red p-10 border-4 border-white rounded-2xl w-fit h-fit font-normal items-center mb-20'>
+                <div style = {{'--c':'#bd184f', '--w': '30px'}} className='irlgrid flex flex-col irlgrid bg-irl-red p-10 border-4 border-white rounded-2xl w-screen lg:w-fit h-fit font-normal items-center mb-20'>
                   <p>At the <b>Idea Realization Lab (IRL)</b>, we build next-generation immersive experiences that blend art, code, hardware, and AI. This project is a fully integrated, student-built platform for exploring real-time multimedia storytelling.</p> 
                   <img className="w-[10rem] invert" src="./Smile.png"></img>
                   <p>With motion triggers, projection mapping, DMX lighting, surround sound, AI visuals, and more, it’s both a performance and a testbed—a space for pushing boundaries in artistic expression and AI-enhanced cognitive engagement.</p>
@@ -39,7 +39,7 @@ function App() {
               </div>
             </div>
           </div>
-          <h1 style = {{'--c':'#3b3b3b', '--w': '50px'}}className='irlgrid bg-irl-black text-8xl text-center p-10'>INTERACTIVE SCENES</h1>
+          <h1 style = {{'--c':'#3b3b3b', '--w': '50px'}}className='w-screen irlgrid bg-irl-black text-5xl lg:text-8xl text-center p-10'>INTERACTIVE SCENES</h1>
           <div className='flex flex-col lg:flex-row h-fit w-screen align-middle justify-center items-center bg-black'>
             <button onClick={() => scrollToSection(door)} className='bg-irl-blue w-full lg:w-[15%]'>Automatic Door Reveal</button>
             <button onClick={() => scrollToSection(guitar)}className='bg-gray-500 w-full lg:w-[15%]'>The Guitar Sword in the Stone</button>
