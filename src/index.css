@@ -22,10 +22,10 @@
   height: calc(100vh / 0.8);
 }
 @theme{
-  --color-irl-blue: #00aeef;
-  --color-irl-red: #da1c5c;
-  --color-irl-yellow: #fff200;
-  --color-irl-black: #231f20;
+  --color-irl-blue: #67b0bb;
+  --color-irl-red: #e0a96e;
+  --color-irl-yellow: #f2e4bb;
+  --color-irl-black: #002748;
   --font-input: "Input";
   --font-input-bold: "InputBold";
 
@@ -58,20 +58,22 @@ b{
   font-family: InputBold;
 }
 .b{
-  border:12px dashed white;
+  border:2px solid white;
   border-radius: 25px;
+  box-shadow: 0px 0px 70px rgba(255, 255, 255, 0.397);
 }
 button{
-  font-size:1.5rem;
+  font-size:1.25rem;
   text-align: center;
   color:black;
   margin:1rem;
-  height:200px;
+  padding:1rem;
+  height:150px;
   font-family:InputBold;
-  transition:0.1s ease;
+  transition:0.3s ease;
 }
 button:hover{
-  border:12px dashed white;
+  border:2px solid white;
   color:white
 }
 

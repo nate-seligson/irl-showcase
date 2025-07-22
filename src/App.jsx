@@ -21,46 +21,44 @@ function App() {
                   Your browser does not support the WebM format.
               </video>
           </div>
-          <div id = "header" className='flex relative w-screen h-fit bg-[url(./assets/splatter.png)] bg-contain justify-center align-middle flex-col lg:flex-row items-center gap-20'>
+          <div id = "header" className='flex relative w-screen h-fit bg-black bg-contain justify-center align-middle flex-col items-center'>
             <div className='flex flex-col align-middle justify-center h-full text-center text-4xl'>
-              <img src = "./logo.png" className='w-md drop-shadow-white drop-shadow-2xl/50 -mb-20 z-0'></img>
+              <img src = "./logo.png" className='w-md drop-shadow-white drop-shadow-2xl/50 invert z-0 m-10'></img>
               <h1 className='z-10 font-bold'>SHOWCASE</h1>
             </div>
             <div className = "flex w-1/2 h-full text-center align-middle items-center justify-center">
               <div className='flex flex-col gap-5 mt-20 items-center'>
-                <h1 style = {{'--c':'#bd184f', '--w': '20px'}} className='irlgrid text-3xl bg-irl-red p-10 border-4 border-white rounded-full w-fit h-fit'>Welcome to the IRL Immersive Showcase</h1>
-                <div style = {{'--c':'#bd184f', '--w': '30px'}} className='irlgrid flex flex-col irlgrid bg-irl-red p-10 border-4 border-white rounded-2xl w-screen lg:w-fit h-fit font-normal items-center mb-20'>
+                <h1 style = {{'--c':'#bd184f', '--w': '20px'}} className='text-3xl bg-irl-black p-10 border-4 border-white rounded-full w-fit h-fit'>Welcome to the IRL Immersive Showcase</h1>
+                <div style = {{'--c':'#bd184f', '--w': '30px'}} className='drop-shadow-blue-900 drop-shadow-2xl/50 flex flex-col bg-irl-black p-10 border-4 border-white rounded-2xl w-screen h-fit font-normal items-center mb-20'>
                   <p>At the <b>Idea Realization Lab (IRL)</b>, we build next-generation immersive experiences that blend art, code, hardware, and AI. This project is a fully integrated, student-built platform for exploring real-time multimedia storytelling.</p> 
-                  <img className="w-[10rem] invert" src="./Smile.png"></img>
-                  <p>With motion triggers, projection mapping, DMX lighting, surround sound, AI visuals, and more, it’s both a performance and a testbed—a space for pushing boundaries in artistic expression and AI-enhanced cognitive engagement.</p>
-                  <img className="w-[16rem] invert" src="./Black hand.png"></img>
-                  <p>Students learn hands-on skills in robotics, lighting design, sensor integration, sound engineering, and real-time control systems—all while building an unforgettable experience.</p>              
+                  <br></br><p>With motion triggers, projection mapping, DMX lighting, surround sound, AI visuals, and more, it’s both a performance and a testbed—a space for pushing boundaries in artistic expression and AI-enhanced cognitive engagement.</p>
+                  <br></br><p>Students learn hands-on skills in robotics, lighting design, sensor integration, sound engineering, and real-time control systems—all while building an unforgettable experience.</p>              
                 </div>
               </div>
             </div>
           </div>
-          <h1 style = {{'--c':'#3b3b3b', '--w': '50px'}}className='w-screen irlgrid bg-irl-black text-5xl lg:text-8xl text-center p-10'>INTERACTIVE SCENES</h1>
+          <h1 style = {{'--c':'#3b3b3b', '--w': '50px'}}className='w-screen   bg-irl-black text-5xl lg:text-8xl text-center p-10'>INTERACTIVE ELEMENTS</h1>
           <div className='flex flex-col lg:flex-row h-fit w-screen align-middle justify-center items-center bg-black'>
             <button onClick={() => scrollToSection(door)} className='bg-irl-blue w-full lg:w-[15%]'>Automatic Door Reveal</button>
-            <button onClick={() => scrollToSection(guitar)}className='bg-gray-500 w-full lg:w-[15%]'>The Guitar Sword in the Stone</button>
+            <button onClick={() => scrollToSection(guitar)}className='bg-irl-black w-full lg:w-[15%]'>The Guitar Sword in the Stone</button>
             <button onClick={() => scrollToSection(ai)}className='bg-irl-yellow w-full lg:w-[15%]'>Generative AI Visuals</button>
             <button onClick={() => scrollToSection(flowers)}className='bg-irl-red w-full lg:w-[15%]'>A Field of Robotic Flowers</button>
             <button onClick={() => scrollToSection(audio)}className='bg-irl-blue w-full lg:w-[15%]' >Dolby Atmos Surround Audio</button>
-            <button onClick={() => scrollToSection(immersive)}className='bg-gray-500 w-full lg:w-[15%]'>Immersive Multimedia Experience</button>
+            <button onClick={() => scrollToSection(immersive)}className='bg-irl-black w-full lg:w-[15%]'>Immersive Multimedia Experience</button>
           </div>
-          <div ref = {door} style = {{'--c':'#56c7f0', '--w': '120px'}} className='irlgrid flex w-screen min-h-screen bg-irl-blue flex-col'>
+          <div ref = {door} style = {{'--c':'#56c7f0', '--w': '120px'}} className='  flex w-screen min-h-screen bg-irl-blue flex-col'>
             <h1 className='text-7xl pt-10 underline underline-offset-4 '>AUTOMATIC DOOR REVEAL</h1>
             <div className='flex flex-col lg:flex-row w-full items-center justify-center'>
               <div className='flex flex-col text-2xl font-input w-full lg:w-1/2 h-full overflow-clip items-center justify-center align-middle text-center p-10 gap-10'>
-                <img className= "w-sm h-full object-stretch flex-grow b" src = "./door/IMG_7007.webp"></img>
+                <img className= "w-sm b" src = "./door/IMG_7007.webp"></img>
                 <p><b>Ean Rains</b> created a massive 10-foot wall that opens automatically using a garage door motor. <b>Tina Alkayed</b> and <b>Matthew Reichard</b> hacked the remote control and connected it to a radar sensor, triggering the door when someone approaches—complete with synchronized lighting and sound.</p>
               </div>
               <div className='flex items-center justify-center align-middle w-1/2'>
-                <img className= "w-md b" src = "./door/IMG_7001.gif"></img>
+                <img className= "w-sm b" src = "./door/IMG_7001.gif"></img>
               </div>
             </div>
           </div>
-          <div ref = {guitar} style = {{'--c':'#3b3b3b', '--w': '120px'}} id="guitar" className='irlgrid flex w-screen min-h-screen bg-irl-black flex-col'>
+          <div ref = {guitar} style = {{'--c':'#3b3b3b', '--w': '120px'}} id="guitar" className='  flex w-screen min-h-screen bg-irl-black flex-col'>
             <h1 className='text-7xl pt-10 underline underline-offset-4 w-full text-right p-5'>THE GUITAR SWORD IN THE STONE</h1>
             <div className='flex flex-col lg:flex-row justify-center align-middle items-center w-full gap-10 p-10 text-center'>
                 <img className='xl:w-lg w-xs b' src = "./guitar/g1.webp"></img>
@@ -68,47 +66,49 @@ function App() {
                 <img className='xl:w-lg w-xs  b' src = "./guitar/g2.webp"></img>
             </div>
           </div>
-          <div ref = {ai}style = {{'--c':'#ede200', '--w': '120px'}} id="flowers" className='irlgrid flex w-screen min-h-screen bg-irl-yellow text-irl-black flex-col'>
+          <div ref = {ai}style = {{'--c':'#ede200', '--w': '120px'}} id="flowers" className='  flex w-screen min-h-screen bg-irl-yellow text-black flex-col'>
             <h1 className='text-7xl pt-10 underline underline-offset-4 '>GENERATIVE AI VISUALS</h1>
             <div className='flex w-full justify-center align-middle items-center p-5'>
-                <img className = "w-[60rem] border-[12px] border-black border-dashed " src = "./ai/sd.gif"></img>
+                <img className = "w-[60rem] border-[2px] border-black border-solid drop-shadow-black drop-shadow-2xl/75" src = "./ai/sd.gif"></img>
             </div>
             <div className='flex flex-col lg:flex-row justify-center gap-10 align-middle items-center'>
-                <img className="w-3xl m-10 border-[12px] border-black border-dashed"src = "./ai/sc.webp"></img>
+                <img className="w-3xl m-10 border-[2px] border-black border-solid drop-shadow-black drop-shadow-2xl/75"src = "./ai/sc.webp"></img>
                 <p><b>Nate Seligson</b> and <b>Auriel Kremp</b> used cutting-edge generative AI tools to create reactive visuals that “hallucinate” in sync with the space and respond to visitor movement.</p>
             </div>
           </div>
-          <div ref = {flowers} style = {{'--c':'#bd184f', '--w': '120px'}} id="automatic-door-reveal" className='irlgrid flex w-screen min-h-screen bg-irl-red flex-col'>
+          <div ref = {flowers} style = {{'--c':'#bd184f', '--w': '120px'}} id="automatic-door-reveal" className='  flex w-screen min-h-screen bg-irl-red flex-col'>
             <h1 className='text-7xl pt-10 underline underline-offset-4 w-full text-right p-5'>A FIELD OF ROBOTIC FLOWERS</h1>
-            <div className = "flex flex-col lg:flex-row w-full h-full justify-center align-middle items-center">
-              <div className='flex flex-col justify-center text-center align-middle items-center w-full lg:w-1/2 m-10'>
-                <p><b>Alisa Zharkova</b> designed a robotic flower that blooms and lights up on command. The prototype is network-controlled and designed to scale—imagine a whole field of these flowers responding to your presence.</p>
-                <img src = "./flowers/process.webp" className='w-5xl b m-10'></img>
-              </div>
-              <img src="./flowers/main.gif" className='w-[70rem] m-10 b'></img>
+            <div className = "flex flex-col flex-wrap lg:flex-row w-full h-full justify-center align-middle items-center">
+              <img src = "./flowers/flow.webp" className = 'w-[30rem] m-10 b'></img>
+                <div className='flex flex-col justify-center align-middle items-center w-full lg:w-1/2 m-10'>
+                  <p><b>Alisa Zharkova</b> designed a robotic flower that blooms and lights up on command. The prototype is network-controlled and designed to scale—imagine a whole field of these flowers responding to your presence.</p>
+                  <img src = "./flowers/process.webp" className='w-5xl b m-10'></img>
+                </div>
+              <img src="./flowers/main.gif" className='w-[80rem] m-10 b'></img>
             </div>
+            
           </div>
-          <div ref = {audio} style = {{'--c':'#56c7f0', '--w': '120px'}} id="automatic-door-reveal" className='irlgrid flex w-screen min-h-screen bg-irl-blue flex-col'>
+          <div ref = {audio} style = {{'--c':'#56c7f0', '--w': '120px'}} id="automatic-door-reveal" className='  flex w-screen min-h-screen bg-irl-blue flex-col'>
             <h1 className='text-7xl pt-10 underline underline-offset-4 '>DOLBY ATMOS SURROUND AUDIO</h1>
             <div className='flex flex-col lg:flex-row w-full justify-center align-middle items-center'>
-              <img src="./audio/IMG_6998.webp" className='w-lg m-10 b'></img>
-              <div className='flex flex-col w-full lg:w-1/2 justify-center align-middle items-center text-center'>
-                <img src="./audio/IMG_6988.webp" className='w-xl m-10 b'></img>
+              <img src="./audio/i1.webp" className='w-lg m-10 b'></img>
+              <div className='flex flex-col w-full lg:w-1/2 justify-center align-middle items-center'>
+                <img src="./audio/2.webp" className='w-xl m-10 b'></img>
                 <p><b>Jonathan Shepard </b>installed a full Dolby Atmos surround system with 12 speakers. He composed a custom piece to showcase the system's immersive soundscapes and built experimental guitar effects that work with Dolby's spatial rendering engine.</p>
               </div>
             </div>
           </div>
-          <div ref = {immersive} style = {{'--c':'#3b3b3b', '--w': '120px'}} id="automatic-door-reveal" className='irlgrid flex w-screen min-h-screen bg-irl-black flex-col'>
+          <div ref = {immersive} style = {{'--c':'#3b3b3b', '--w': '120px'}} id="automatic-door-reveal" className='  flex w-screen min-h-screen bg-irl-black flex-col'>
             <h1 className='text-7xl pt-10 underline underline-offset-4 w-full text-right p-5'>IMMERSIVE MULTIMEDIA EXPERIENCE</h1>
               <div className='flex flex-col lg:flex-row w-full justify-center align-middle items-center'>
-                <div className='flex flex-col w-full lg:w-1/2 justify-center align-middle items-center text-center'>
-                <img src="./immersive/IMG_6994.webp" className='w-xl m-10 b'></img>
+                <div className='flex flex-col w-full lg:w-1/2 justify-center align-middle items-center text-right'>
+                <img src="./immersive/IMG_6988.webp" className='w-xl m-10 b'></img>
                 <p><b>Matthew Reichard </b>built a unified control system that automates fog machines, wind fans, and DMX lighting. His software infrastructure synchronizes all scene transitions. Auriel Kremp added layered visuals using lasers and projection-mapped floor effects.</p>
               </div>
-              <img src="./immersive/i1.webp" className='w-md m-10 b'></img>
+              <img src="./immersive/ii.webp" className='w-4xl m-10 b'></img>
             </div>
           </div>
-          <footer id="colophon" className="bg-irl-black text-white py-10">
+          <footer id="colophon" className="bg-black text-white py-10">
             <div className="flex flex-col items-center">
               <div className="flex flex-row w-full justify-between px-10 mb-10">
                 {/* Contact Information Section 1 */}
