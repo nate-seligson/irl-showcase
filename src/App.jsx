@@ -39,6 +39,7 @@ function App() {
               </div>
             </div>
           </div>
+          <h1 style = {{'--c':'#3b3b3b', '--w': '50px'}}className='irlgrid bg-irl-black text-8xl text-center p-10'>INTERACTIVE SCENES</h1>
           <div className='flex flex-col lg:flex-row h-fit w-screen align-middle justify-center items-center bg-black'>
             <button onClick={() => scrollToSection(door)} className='bg-irl-blue w-full lg:w-[15%]'>Automatic Door Reveal</button>
             <button onClick={() => scrollToSection(guitar)}className='bg-gray-500 w-full lg:w-[15%]'>The Guitar Sword in the Stone</button>
@@ -47,7 +48,6 @@ function App() {
             <button onClick={() => scrollToSection(audio)}className='bg-irl-blue w-full lg:w-[15%]' >Dolby Atmos Surround Audio</button>
             <button onClick={() => scrollToSection(immersive)}className='bg-gray-500 w-full lg:w-[15%]'>Immersive Multimedia Experience</button>
           </div>
-          <h1 style = {{'--c':'#3b3b3b', '--w': '50px'}}className='irlgrid bg-irl-black text-8xl text-center p-10'>INTERACTIVE SCENES</h1>
           <div ref = {door} style = {{'--c':'#56c7f0', '--w': '120px'}} className='irlgrid flex w-screen min-h-screen bg-irl-blue flex-col'>
             <h1 className='text-7xl pt-10 underline underline-offset-4 '>AUTOMATIC DOOR REVEAL</h1>
             <div className='flex flex-col lg:flex-row w-full items-center justify-center'>
